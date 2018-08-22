@@ -1,0 +1,25 @@
+.home_slider
+	.slider-list
+		.owl-for
+			.item
+				min-height: 500px
+				display: flex
+				align-items: center
+				color: #ffffff
+				.title
+					h2
+						+fz(2.57rem)
+						+fw(600)
+					p
+						+fz(1.71rem)
+						+fw(400)
+						margin-bottom: 0
+
+
+		+media-breakpoint-up(md)
+		+media-breakpoint-up(lg)
+			.owl-for
+				.item
+					.title
+						p
+							max-width: 50%

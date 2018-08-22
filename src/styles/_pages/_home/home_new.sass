@@ -1,0 +1,85 @@
+
+.home_new
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0 3rem 0)
+	.new-lists
+		h2
+			position: relative
+			+fz(2.57rem)
+			+fw(400)
+			margin-bottom: 3rem
+			&:before
+				content: ''
+				display: block
+				width: 5rem
+				height: 2px
+				background: $amethyst
+				+pos(abs , null null -6px 50%)
+				+transform(translateX(-50%))
+			span
+				color: $amethyst
+		.item
+			a
+				text-decoration: none
+			figure
+				.boxzoom
+					overflow: hidden
+					+bor-rad(10px)
+					position: relative
+					&:before
+						content: ''
+						display: block
+						width: 0
+						height: 100%
+						+pos(abs , 0 null null 0)
+						z-index: 1
+						background: rgba(0,0,0,.5)
+						transform-origin: right
+						+transition(all .5s ease-in-out)
+					&:after
+						content: '\f06e'
+						font-family: 'FontAwesome'
+						+set-center()
+						+fz(3rem)
+						color: #ffffff
+						z-index: 4
+						opacity: 0
+						+transition(all .5s ease-in-out)
+					img
+						+transition(all .4s ease-in-out)
+				figcaption
+					padding-top: 1rem
+					h3
+						+fz(1.14rem)
+						margin-bottom: .3rem
+						color: #000000
+						+transition(all .4s ease-in-out)
+					time,p
+						+transition(all .4s ease-in-out)
+						+fz(1rem)
+						color: darken(#ffffff,15%)
+						display: block
+						margin-bottom: 1rem
+					p
+						margin-bottom: 0
+						overflow: hidden
+						text-overflow: ellipsis
+						-webkit-line-clamp: 3
+						display: -webkit-box
+						-webkit-box-orient: vertical
+			&:hover
+				figure
+					.boxzoom
+						img
+							+transform(scale(1.2))
+						&:before
+							width: 100%
+							transform-origin: left
+						&:after
+							opacity: 1
+					figcaption
+						h3
+							color: $amethyst
+						p
+							color: #000000

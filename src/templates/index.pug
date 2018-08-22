@@ -1,0 +1,82 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	// Home Slider
+	section.home_slider
+		article.slider-list
+			.owl-for.owl-carousel.owl-theme#synce1
+				.item(bg-img="img/bg_1.png")
+					.container
+						.title
+							h2 Chúng tôi là FullStack Vietnam
+							p Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+				.item(bg-img="img/bg_1.png")
+					.container
+						.title
+							h2 Chúng tôi là FullStack Vietnam
+				.item(bg-img="img/bg_1.png")
+					.container
+						.title
+							h2 Chúng tôi là FullStack Vietnam
+							p Reference site about Lorem Ipsum
+	// Home new
+	section.home_new
+		article.new-lists
+			.container
+				.row
+					.col-12.text-center
+						h2.title
+							span FullStack
+							|  chuyên nghiệp
+				.row
+					.col-md-4.item
+						a(href="#" title="Trung tâm đào tạo IT")
+							figure
+								.boxzoom
+									img.w-100(src="img/home_new1.png", alt="alt")
+								figcaption
+									h3 Trung tâm đào tạo IT chuyên nghiệp
+									time 26/08/2018
+									p Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+					.col-md-4.item
+						a(href="#" title="Trung tâm đào tạo IT")
+							figure
+								.boxzoom
+									img.w-100(src="img/home_new2.png", alt="alt")
+								figcaption
+									h3 Trung tâm đào tạo IT chuyên nghiệp
+									time 26/08/2018
+									p Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+					.col-md-4.item
+						a(href="#" title="Trung tâm đào tạo IT")
+							figure
+								.boxzoom
+									img.w-100(src="img/home_new3.png", alt="alt")
+								figcaption
+									h3 Trung tâm đào tạo IT chuyên nghiệp
+									time 26/08/2018
+									p Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.Reference site about Lorem Ipsum, giving information on its origins, as well as a rando
+	// Home Partner
+	section.home_partner
+		.container
+			article.partner-list
+				.owl-for.owl-carousel.owl-theme
+					.item
+						img(src="./img/clients_1.png", alt="")
+					.item
+						img(src="./img/clients_2.png", alt="")
+					.item
+						img(src="./img/clients_3.png", alt="")
+					.item
+						img(src="./img/clients_4.png", alt="")
+					.item
+						img(src="./img/clients_5.png", alt="")
+					.item
+						img(src="./img/clients_6.png", alt="")
+					.item
+						img(src="./img/clients_6.png", alt="")

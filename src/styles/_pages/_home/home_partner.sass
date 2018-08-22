@@ -1,0 +1,30 @@
+.home_partner
+	padding-bottom: 3rem
+	.partner-list
+		.owl-for
+			.owl-nav
+				button
+					&.owl-prev , &.owl-next
+						width: 2.5rem
+						height: 2.5rem
+						+transform(translateY(-50%))
+						background: $xanhss
+						+bor-rad(0)
+						color: #ffffff
+		+media-breakpoint-up(lg)
+			.owl-for
+				.owl-nav
+					button
+						opacity: 0
+						+transition(all .4s ease-in-out)
+						&.owl-prev
+							+pos(abs, 50% null null -3rem)
+						&.owl-next
+							+pos(abs, 50% -3rem null null)
+				&:hover
+					.owl-nav
+						button
+							opacity: 1
+							&.owl-prev , &.owl-next
+								&:hover
+									background: $warning

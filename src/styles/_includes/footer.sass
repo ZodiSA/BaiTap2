@@ -1,0 +1,76 @@
+footer
+	background: $extra-xanh
+	.footer-link
+		+pad(2rem 0)
+		h4
+			color: $xanhss
+			+fz(1.14rem)
+			+fw(500)
+			text-transform: uppercase
+			margin-bottom: 1.5rem
+		.f-nav
+			ul
+				margin-bottom: 0
+				text-align: center
+				li , a
+					+fz(1rem)
+					+fw(400)
+					color: $extra-xanh-1
+					margin-bottom: 1rem
+				a
+					text-decoration: none
+					position: relative
+					display: block
+					&:before
+						content: '\f061'
+						font-family: 'FontAwesome'
+						display: inline-block
+						margin-right: .2rem
+			&.special-nav
+				li
+					&:last-child
+						margin-bottom: 0
+						a
+							margin-bottom: 0
+	.copyright
+		background: $xanhss
+		+pad(2rem 0)
+		.item
+			display: flex
+			flex-direction: column
+			align-items: center
+			p
+				color: #ffffff
+				+fw(400)
+			a
+				display: inline-block
+				width: 2.64rem
+				height: 2.64rem
+				+lh(2.64rem)
+				text-align: center
+				+bor-rad(50%)
+				color: $xanhss
+				background: #ffffff
+				text-decoration: none
+				&:first-child
+					margin-right: 1rem
+	+media-breakpoint-up(lg)
+		.footer-link
+			+pad(4rem 0)
+			.f-nav
+				&.special-nav
+					padding-top: 2.5rem
+				ul
+					text-align: left
+					li,a
+						margin-bottom: .3rem
+		.copyright
+			.item
+				flex-direction: row
+				justify-content: space-between
+				p
+					margin-bottom: 0
+				a
+					+transition(all .5s ease-in-out)
+					&:hover
+						opacity: .5
